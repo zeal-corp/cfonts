@@ -1,7 +1,8 @@
 {
-	"name": "cfonts",
+	"name": "@zeal-corp/cfonts",
 	"description": "Sexy fonts for the console",
-	"version": "2.9.3",
+	"version": "2.9.9",
+	"types": "lib/index.d.ts",
 	"homepage": "https://github.com/dominikwilkowski/cfonts",
 	"author": {
 		"name": "Dominik Wilkowski",
@@ -30,7 +31,7 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"prepublish": "yarn build && yarn test",
+		"prepublish": "yarn build && yarn test && yarn types:declaration",
 		"test": "yarn build && yarn test:unit && yarn test:lint && yarn test:types && yarn test:fonts",
 		"test:fonts": "node ./test/fonttest.js",
 		"test:watch": "jest --watchAll --coverage",

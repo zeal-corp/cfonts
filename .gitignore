@@ -15,3 +15,5 @@ bin/
 lib/
 package-lock.json
 .coveralls.yml
+.yarn
+
